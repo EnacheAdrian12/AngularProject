@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.addSpot-div{
+    width: 300px;
+    height: 600px;
+     font-family: "Roboto", sans-serif;
+}
+.addSpot-title{
+    font-size:30px;
+    font-weight: 800;
+}
+.addSpot-label{
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.addSpot-input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px black solid;
+    margin-bottom: 20px;
+    margin-top:10px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.addSpot-input:focus{
+    outline: none;
+    border-bottom: rgb(47, 124, 148) 2px solid;
+}
+.addSpot-data-form{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.addSpot-map{
+    margin-top: 40px;
+}
+.addSpot-div-buttons{
+    margin-top: 30px;
+    display: flex;
+    float: right
+}
+.addSpot-cancelbutton{
+    margin-right: 40px;
+    font-size: 17px;
+    border: none;
+    color: red;
+    font-weight: 500;
+}
+
+.addSpot-confirmbutton{
+    margin-right: 20px;
+    font-size: 17px;
+    border: none;
+    color: blue;
+    font-weight: 500;
+}
+.addSpot-cancelbutton:hover{
+    color: rgb(224, 71, 71);
+    cursor: pointer;
+}
+.addSpot-confirmbutton:hover{
+    color: rgb(82, 82, 245);
+    cursor: pointer;
+
+}
+.please-wait{
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.addSpot-inputverification{
+    color: red;
+    font-weight: 500;
+    font-size: 15px;
+}

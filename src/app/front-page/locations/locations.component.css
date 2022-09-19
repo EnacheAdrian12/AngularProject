@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.location-div {
+  margin-top: 80px;
+
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: "Roboto", sans-serif;
+
+}
+.location-title {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 35px;
+}
+.location-search-bar {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color: rgb(228, 228, 228);
+  padding: 12px 12px;
+  width: 400px;
+}
+.location-search-bar-input {
+  border: none;
+  background-color: rgb(228, 228, 228);
+  margin-left: 10px;
+  font-size: 20px;
+}
+.location-search-bar-input:focus {
+  outline: none;
+}
+.location-table {
+  margin-top: 50px;
+
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 90%;
+}
+.locations-table-title {
+  background-color: rgb(219, 219, 219);
+  height: 40px;
+}
+.locations-table-title th {
+  padding-left: 2px;
+}
+.location-table-objects td {
+  padding: 10px 2px;
+}
+.hidden {
+  display: none;
+}
+.margin-bottom{
+  margin-top: 50px;
+  height: 30px;
+}

@@ -1,0 +1,21 @@
+<div class="login-div">
+  <form [formGroup]="help.inputData">
+    <h1 class="login-h1">Kite</h1>
+    <label for="" class="login-text">Username</label><br />
+    <input class="input" formControlName="username" required /><br />
+    <label for="" class="login-text">Password</label><br />
+    <input
+      [ngClass]="!incorrectData ? 'input more-margin' : 'input'"
+      formControlName="password"
+      required
+    /><p class="login-incorrect" *ngIf="incorrectData">The Username or Password is incorrect. Please try again. </p><br />
+    
+    <button
+      (click)="loginUser()"
+      [ngClass]="getClass()"
+      [disabled]="!help.inputData.valid"
+    >
+      Login
+    </button>
+  </form>
+</div>

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+agm-map {
+  height: 700px;
+  position: relative;
+ 
+}
+
+
+.info-div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.gm-style-iw-d {
+  overflow: none;
+}
+.info-div-header {
+  font-weight: bold;
+  font-size: 20px;
+}
+.info-div-country {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.info-div-details-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 10.5px;
+}
+.info-div-details-value {
+  color: black;
+  font-weight: 600;
+  font-size: 11.5px;
+  margin-bottom: 7px;
+}
+.more-margin {
+  margin-bottom: 15px;
+}
+.info-div-button-nonfavourite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 160px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #ffbf00;
+  color: white;
+  padding-right: 10px;
+}
+.info-div-button-par-nonfavourite {
+  font-size: 18px;
+  padding-right: 4px;
+   padding-top: 12px;
+}
+.info-div-button-nonfavourite:hover {
+  background-color: rgb(255, 191, 0, 0.8);
+  cursor: pointer;
+}
+.info-div-button-favourite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  padding-right: 10px;
+}
+.info-div-button-par-favourite{
+   font-size: 18px;
+  padding-right: 4px;
+  padding-top: 8px;
+  
+}
+.addSpot-div{
+  display: flex;
+  position: absolute;
+}

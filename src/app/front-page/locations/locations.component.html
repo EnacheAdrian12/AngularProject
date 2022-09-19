@@ -1,0 +1,35 @@
+<div class="location-div">
+  <h1 class="location-title">Locations</h1>
+  <div class="location-search-bar">
+    <mat-icon >search</mat-icon><input [(ngModel)]="searchItem"  placeholder="Search..." class="location-search-bar-input"/>
+  </div>
+  <table class="location-table">
+    <tr class="locations-table-title">
+      <th>Name</th>
+      <th>Country</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Wind Prob.</th>
+      <th>When to go</th>
+    </tr>
+
+    <tr
+      *ngFor="let loc of help.allDataShow; let i = index"
+      [ngClass]="
+        loc.name.toLowerCase().includes(searchItem.toLowerCase()) ||
+        loc.country.toLowerCase().includes(searchItem.toLowerCase()) ||
+        loc.month.toLowerCase().includes(searchItem.toLowerCase())
+          ? 'location-table-objects'
+          : 'hidden'
+      "
+    >
+      <td>{{ loc.name }}</td>
+      <td>{{ loc.country }}</td>
+      <td>{{ loc.lat }}</td>
+      <td>{{ loc.long }}</td>
+      <td>{{ loc.probability }}%</td>
+      <td>{{ loc.month }}</td>
+    </tr>
+  </table>
+</div>
+<div class="margin-bottom"></div>

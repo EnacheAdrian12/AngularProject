@@ -1,0 +1,31 @@
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+/>
+
+<button
+  class="nav-bar-logout-button"
+  (click)="logOutFunction()"
+  *ngIf="ShowLogout"
+><mat-icon>exit_to_app</mat-icon><p class="nav-bar-logout-button-logout"> Logout</p>
+</button>
+
+<div class="nav-bar_container">
+  <div>
+    <h3 class="nav-bar_header">Kite</h3>
+  </div>
+  <div class="nav-bar-container-children2">
+    <button
+      *ngIf="!help.addClicked"
+      class="nav-bar_button"
+      (click)="addASpot()"
+    >
+      Add spot
+    </button>
+    <a class="nav-bar-logout" (click)="logOut()"
+      ><span class="material-symbols-outlined nav-bar_icon">
+        account_circle
+      </span></a
+    >
+  </div>
+</div>

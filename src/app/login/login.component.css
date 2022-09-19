@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto&display=swap");
+
+.login-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.login-h1 {
+  font-family: "Calligraffitti", cursive;
+  font-size: 90px;
+  text-align: center;
+}
+.login-text {
+  float: left;
+}
+
+.input {
+  margin-bottom: 10px;
+  margin-top: 8px;
+  width: 330px;
+  height: 26px;
+  font-size: 18px;
+}
+.more-margin {
+  margin-bottom: 30px;
+}
+.login-button {
+  
+  background-color: #3797d3;
+  color: rgb(255, 255, 255);
+  width: 160px;
+  border: #3797d3 2px solid;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.login-button:hover {
+  background-color: #5aabdd;
+  border: #5aabdd 2px solid;
+  cursor: pointer;
+}
+
+.disabled-button {
+  background-color: #8dc4e6;
+  color: white;
+  width: 160px;
+  border: #8dc4e6 2px solid;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+input.ng-invalid.ng-dirty {
+  border-color: red !important;
+}
+.login-incorrect{
+  color: red;
+  font-size: 12px;
+ 
+}

@@ -1,0 +1,64 @@
+<div class="addSpot-div">
+  <h1 class="addSpot-title">Add Spot</h1>
+  <form [formGroup]="inputSpotAdder" name="AddSpot">
+    <h1 class="addSpot-inputverification" *ngIf="!InputValidation">All fields are required. Please try again.</h1>
+    <label class="addSpot-label">Name</label><br />
+    <input
+      type="text"
+      name="Name"
+      ng-model="Name"
+      formControlName="name"
+      class="addSpot-input"
+      required
+    />
+     <br>
+    <label class="addSpot-label">Country</label><br />
+    <input
+      ng-model="Country"
+      type="text"
+      formControlName="country"
+      class="addSpot-input"
+      name="Country"
+      required
+    />
+  
+      
+    <form appearance="fill" class="addSpot-data-form">
+      <label class="addSpot-label">High Season</label>
+      <br />
+      <mat-date-range-input [formGroup]="range" [rangePicker]="picker" required>
+        <input matStartDate formControlName="start" placeholder="Start date" />
+        <input matEndDate formControlName="end" placeholder="End date" />
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </form>
+    <label class="addSpot-label" *ngIf="spotShow">Please Click The Spot</label>
+    <agm-map
+      style="height: 200px"
+      [latitude]="lat"
+      [longitude]="lng"
+      class="addSpot-map"
+      (mapClick)="getActualLocation($event)"
+    >
+      <agm-marker [latitude]="coordsLat" [longitude]="coordsLng"></agm-marker
+    ></agm-map>
+  </form>
+  <div class="addSpot-div-buttons">
+    <button
+      class="addSpot-cancelbutton"
+      (click)="closeAddSpot()"
+      *ngIf="!buttonDisable"
+    >
+      CANCEL
+    </button>
+    <button
+      class="addSpot-confirmbutton"
+      (click)="addSpot()"
+      *ngIf="!buttonDisable"
+    >
+      CONFIRM
+    </button>
+    <p *ngIf="buttonDisable" class="please-wait">Please wait ...</p>
+  </div>
+</div>

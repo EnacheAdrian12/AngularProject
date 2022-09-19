@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto&display=swap");
+
+.nav-bar_container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-bar_header {
+  font-family: "Calligraffitti", cursive;
+  font-size: 37px;
+  margin-left: 70px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.nav-bar-container-children2 {
+  display: flex;
+  margin: 20px 0;
+}
+.nav-bar_button {
+  margin-right: 30px;
+  background-color: #3092cf;
+  color: white;
+  width: 150px;
+  border: #3095d4 2px solid;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav-bar_button:hover {
+  background-color: #32a6ee;
+}
+.nav-bar_icon {
+  margin-right: 60px;
+  font-size: 40px;
+}
+.nav-bar-logout {
+  cursor: pointer;
+}
+
+.nav-bar-logout-button {
+  display: flex;
+   right: 67px;
+  top: 68px;
+  text-align: center;
+  position: absolute;
+  background-color: white;
+  color: orangered;
+  font-weight: 600;
+  padding-top: 9px;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  z-index: 100;
+  border: none;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.25);
+  
+
+}
+.nav-bar-logout-button-logout{
+  padding-top: 5px;
+  padding-left: 4px; 
+}
+
