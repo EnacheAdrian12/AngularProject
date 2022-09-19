@@ -11,6 +11,6 @@ And you need a GoogleMapsApiKey;
 
 ![image](https://user-images.githubusercontent.com/77098686/191052596-1ad6eb9a-b534-4928-957b-57692df5342a.png)
 
-To start: ng serve
+To start the project: "ng serve" in Terminal.
 
 Enjoy the project 
