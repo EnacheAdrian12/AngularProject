@@ -1,27 +1,16 @@
-# AttaProject
+# Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+This project is a mini-app in Angular where you can have a login system and you can add your KiteSurfing spots along the world.
 
-## Development server
+# How to get started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+login Username: test
+      Password: test
+      
+And you need a GoogleMapsApiKey;
 
-## Code scaffolding
+![image](https://user-images.githubusercontent.com/77098686/191052596-1ad6eb9a-b534-4928-957b-57692df5342a.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To start: ng serve
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Enjoy the project 
